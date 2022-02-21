@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Perez</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.2/dist/locomotive-scroll.min.js"></script>
-    <link rel="stylesheet" href="locoScroll.css" />
+    <link rel="icon" href="favicon.png" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.2/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="locoScroll.css" /> -->
   </head>
   <body>
     <!-- Header  -->
     <header class="header">
       <div class="logo">JOSEPH PEREZ</div>
       <ul class="menu-items">
-        <!-- <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Links</a></li> -->
+        <li>
+          <a target="_blank" href="https://github.com/josephperez3"
+            ><img src="github-logo.png" alt="GitHub"
+          /></a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/joseph-perez-701357173/"
+            ><img class="linkedin" src="linkedin-logo.png" alt="GitHub"
+          /></a>
+        </li>
       </ul>
     </header>
 
@@ -28,68 +38,145 @@
         class="container-content home"
         id="home"
         data-scroll
-        data-scroll-speed="2.5"
+        data-scroll-speed="1.2"
       >
         <!-- <div class="home-bg"></div> -->
-        <div class="home-heading heading1" data-scroll data-scroll-speed="2.5">
+        <div class="home-heading heading1" data-scroll data-scroll-speed="1.2">
           <h1>Hi, I'm</h1>
         </div>
-        <div class="home-heading heading2" data-scroll data-scroll-speed="2.5">
+        <div class="home-heading heading2" data-scroll data-scroll-speed="1.2">
           <h1>JOSEPH PEREZ</h1>
+        </div>
+        <div class="scroll-prompt" id="js_scrollPrompt">
+          <div class="scroll-prompt-shape"></div>
         </div>
       </div>
       <!-- About  -->
       <div class="container-content about" id="about">
         <div class="about-content">
-          <div class="about-heading" data-scroll data-scroll-speed="2.5">
+          <div class="heading" data-scroll data-scroll-speed="1.2">
             <h1>About Me</h1>
           </div>
-          <div class="about-description" data-scroll data-scroll-speed="2.5">
+          <div class="about-description" data-scroll data-scroll-speed="1.2">
             <p>
               Hey! I'm Joseph and in my 2B term of Computer Science at the
-              University of Waterloo. <br />
-              I'm currently interested in full stack development, and I've been
-              using React.js, Vue.js <br />
-              as well as Django, but I'm always open to learning new languages
-              or frameworks! <br />
-              Outside of tech, I enjoy playing piano, cooking and volleyball.
+              University of Waterloo. I'm currently interested in full stack
+              development, and I've been using React.js, Vue.js as well as
+              Django, but I'm always open to learning new languages or
+              frameworks! Outside of tech, I enjoy playing piano, cooking and
+              volleyball.
             </p>
           </div>
-          <div class="about-image">
-            <div class="image"></div>
+          <div class="about-image"></div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="projects" id="projects">
+        <div class="projects-content">
+          <div class="heading" data-scroll data-scroll-speed="1.5">
+            <h1>Projects</h1>
           </div>
+          <a target="_blank" href="https://fooderweb.netlify.app/">
+            <div class="projects-card">
+              <div class="projects-info">
+                <div class="projects-description">
+                  <h2>Fooder</h2>
+                  <div class="tags">
+                    <div class="tag fooder-tag">Node.js</div>
+                    <div class="tag fooder-tag">Socket.io</div>
+                    <div class="tag fooder-tag">React.js</div>
+                  </div>
+                  <p>
+                    Fooder is a project that allows users in a room to search
+                    through nearby restaurants with the Yelp API, liking and
+                    disliking these restaurants, then displaying restaurants
+                    that everybody likes.
+                  </p>
+                </div>
+                <div class="projects-images">
+                  <img class="projects-mobileimage" src="FooderHome.png" />
+                  <img class="projects-mobileimage" src="FooderLobby.png" />
+                </div>
+              </div></div
+          ></a>
+          <a
+            target="_blank"
+            href="https://josephperez3.github.io/minimax-tictactoe/"
+          >
+            <div class="projects-card">
+              <div class="projects-info">
+                <div class="projects-description">
+                  <h2>Minimax Tic-tac-toe</h2>
+                  <div class="tags">
+                    <div class="tag tictactoe-tag">JavaScript</div>
+                    <div class="tag tictactoe-tag">Data Structures</div>
+                  </div>
+                  <p>
+                    Using the Minimax algorithm, I created an AI for a
+                    Tic-tac-toe game. It works by generating a tree of possible
+                    moves given the current board state, calculating and then
+                    choosing the move with the highest value.
+                  </p>
+                </div>
+                <div class="projects-images">
+                  <img class="projects-image" src="tictactoe.png" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://josephperez3.github.io/collision-simulator/"
+          >
+            <div class="projects-card">
+              <div class="projects-info">
+                <div class="projects-description">
+                  <h2>Collision Simulator</h2>
+                  <div class="tags">
+                    <div class="tag collision-tag">JavaScript</div>
+                    <div class="tag collision-tag">p5.js</div>
+                  </div>
+                  <p>
+                    Collision simuator was made with highschool physics students
+                    in mind. It allows them to visualize 1D and 2D collisions,
+                    with the ability to adjust mass, speed, and direction.
+                  </p>
+                </div>
+                <div class="projects-images">
+                  <img class="projects-image" src="collision-simulator.png" />
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 
       <!-- Contact  -->
       <div class="container-content contact" id="contact">
         <div class="contact-content">
-          <div class="contact-heading" data-scroll data-scroll-speed="2.5">
-            <h1>Links</h1>
+          <div class="heading" data-scroll data-scroll-speed="1.2">
+            <h1>Thanks!</h1>
           </div>
-          <div class="contact-reel" data-scroll data-scroll-speed="2.5">
-            <!-- <p>SAY HELLO! ON OUR <a href="">CHANNEL</a>! Thank You❤️</p> -->
+          <div class="about-description" data-scroll data-scroll-speed="1.2">
+            <p>
+              Thanks for getting to know me a bit more! If you'd like to know
+              more about my professional and educational experiences, you can
+              look at my
+              <a target="_blank" href="JosephPerezResume.pdf">resume</a> or my
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/joseph-perez-701357173/"
+                >LinkedIn.</a
+              >
+              You can also see the code for my projects in my
+              <a href="https://github.com/josephperez3">GitHub.</a>
+            </p>
           </div>
+          <div class="contact-reel" data-scroll data-scroll-speed="1.2"></div>
         </div>
-        <!-- <div class="contact-bg"></div> -->
-      </div>
-
-      <!-- social links  -->
-      <div class="social-links">
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/joseph-perez-701357173/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/josephperez3" target="_blank">GitHub</a>
-          </li>
-        </ul>
       </div>
     </div>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
